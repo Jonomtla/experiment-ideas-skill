@@ -31,6 +31,7 @@ Grades: A+ replicated, A one clean win with numbers, B thin or single-source, C 
 
 Ask these, one block at a time, and wait. Accept pasted text, CSV, screenshots, or "don't have it".
 
+0. **The library.** Ask first: "Do you have access to the IC Experiment Library Google Sheet? If so, paste the link." If yes, read it (see Library above) and use it for the whole run. If no, use the bundled snapshot and say so.
 1. **The store.** URL, platform, what it sells, AOV, rough monthly sessions and orders, the one metric they want to move (CVR, RPV, AOV), anything they are not allowed to change (price, nav, checkout).
 2. **Analytics funnel.** Sessions to PDP, PDP to add-to-cart, ATC to checkout, checkout to purchase, split by device if they have it. Where is the biggest drop vs typical D2C benchmarks (PDP→ATC 8-12%, ATC→checkout about 40-50%, checkout completion 45-60%)?
 3. **Voice of customer.** Post-purchase survey ("what nearly stopped you"), non-buyer or exit survey, reviews, support tickets, returns reasons. Ask for the top three stated objections and the top three stated reasons to buy, in the customers' words.
