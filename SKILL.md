@@ -14,6 +14,9 @@ Run as `/experiment-ideas {client}` (IC) or `/experiment-ideas` (guided).
 
 - Live: `~/Claude/resources/experiment-library/ideas.json` + `evidence.json` (IC machine). Read `README.md` there first.
 - Portable: `library/library.json` inside this skill folder (shareable snapshot; no client notes, no GoodUI rows). Rebuild with `python3 scripts/export_shareable.py` before handing the skill to someone else.
+- Google Sheet: if the user has been shared the "IC Experiment Library" Sheet (or gives any Sheet URL built by push_sheet.py), read it instead of the snapshot. Use the Google Drive connector (`read_file_content` on the spreadsheet id; the output is large, so search within the saved result) or `gws sheets +read` if configured. Tabs: **Hero** (ranked, filterable summary; use for the shortlist), **Ideas** (every field per idea), **Evidence** (one header row per idea, then every test with brand, verdict, lift, confidence, sample, device, variant write-up and links), **IC Runs**, **Taxonomy**. The Sheet holds more than the bundled snapshot (client notes and the full GoodUI test set), so prefer it when available. Do not copy per-test rows from the Sheet into anything you publish; cite ideas and aggregate counts.
+
+Library sources, in order: live JSON on the IC machine → a shared Sheet → the bundled snapshot.
 - Query helper: `python3 scripts/query.py --page pdp,cart --lever friction --industry consumables --min-grade B --effort low,medium --top 25`. It picks the live library when present, otherwise the snapshot.
 
 Grades: A+ replicated, A one clean win with numbers, B thin or single-source, C directional, none = untested. D (net losing) is never recommended; it is what the library says NOT to do.

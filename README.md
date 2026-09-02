@@ -11,6 +11,9 @@ Turns a store's research into a prioritised list of CRO experiments, drawn from 
    ```
 3. In Claude Code, type `/experiment-ideas` and answer the questions. Paste CSVs, screenshots, or "don't have it".
 
+## Using the shared Google Sheet
+If the library owner shares the "IC Experiment Library" Sheet with you and your Claude Code has the Google Drive connector, paste the Sheet link when the skill asks about the library. It will read the Hero, Ideas and Evidence tabs and use the fuller data there instead of the bundled snapshot.
+
 ## What is inside
 - `SKILL.md` — the workflow (intake, research gaps, diagnosis, mapping, output).
 - `research-playbook.md` — the research to run and the exact questions.
